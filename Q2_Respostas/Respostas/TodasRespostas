@@ -1,0 +1,48 @@
+1. O que é herança em POO e qual seu principal objetivo?
+R= Herança é quando uma classe "filha" herda atributos e métodos de uma classe "mãe".
+Assim, reaproveitando o código e facilitando a organização do mesmo.
+
+2. Qual é a diferença entre uma superclasse e uma subclasse? Dê um exemplo de cada.
+R= Superclasse é a classe "mãe", mais genérica. Já a subclasse é a classe "filha", mais específica.
+ex: uma superclasse veículo e uma subclasse bicicleta.
+
+3. Dada a seguinte hierarquia UML: Pessoa → Estudante,
+o que significa afirmar que "todo Estudante é uma Pessoa, mas nem toda Pessoa é um Estudante"?
+R= Significa que Estudante é subclasse de Pessoa, ou seja, Estudante tem tudo que Pessoa tem.
+Contudo, nem toda Pessoa (como um professor, por exemplo) é um estudante.
+
+4. Quais são as vantagens do uso da herança no desenvolvimento de software orientado a objetos?
+R= Vantagens do uso da herança: Reutilização do código, menos repetição e melhor organização.
+
+4.1 Por que uma subclasse não consegue acessar diretamente atributos declarados
+como private na superclasse? Como isso pode ser resolvido?
+R= Porque private só permite acesso dentro da própria classe.
+podemos resolver usando get e set ou mudando para os atributos de private pra protected.
+
+5. Qual o símbolo e a direção da seta usada para representar herança em diagramas
+de classes UML?
+R= Seta triangular e vazia, apontando para da subclasse pra superclasse.
+
+6. Para que serve a palavra-chave super em Java? Cite dois contextos diferentes em
+que ela pode ser usada.
+R= O comando super() serve tanto pra chamar o construtor da superclasse,
+quanto pra acessar método ou atributo da superclasse.
+
+7. Um sistema define as classes Professor, ProfHorista e ProfDE. Por que é mais
+vantajoso centralizar atributos comuns na classe Professor ao invés de declará-los
+separadamente nas subclasses?
+R= Porque evita repetição e deixa o código mais limpo.
+
+8. Suponha que você esteja modelando um sistema de transporte. Como você
+organizaria uma hierarquia de classes para representar Transporte,
+TransporteTerrestre, TransporteAereo, Carro, Avião e Helicóptero?
+R= Transporte (classe mãe) -> TransporteTerrestre, TransporteAereo (classes filhas de "Transporte"),
+Carro (classe filha de "Transporteterrestre"), Avião e Helicóptero (classes filhas de "TransporteAereo").
+
+8.1 Qual o papel da herança nessa modelagem?
+R= Evita duplicar atributos e métodos que são comum em todas as classes ou em uma ramificação.
+
+9. O que acontece se, em uma subclasse, você não chamar explicitamente o construtor
+da superclasse usando super()? Em que situação isso pode gerar erro?
+R= O java identifica erro na subclasse, informando que falta argumentos no construtor da subclasse,
+recomendando que seja inserido o Super() no construtor.
